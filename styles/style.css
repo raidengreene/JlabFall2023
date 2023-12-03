@@ -14,7 +14,7 @@ body {
   }
   
   /* Style the buttons that are used to open the tab content */
-  .tab button {
+  .tab .btn {
     float: left;
     border: none;
     outline: none;
@@ -52,4 +52,14 @@ body {
 
 .justify-col{
     justify-self: center;
+}
+
+.footer{
+  background-color: #868585;
+  position: fixed;
+  left:0;
+  bottom:0;
+}
+a {
+  color:rgb(0, 94, 94);
 }

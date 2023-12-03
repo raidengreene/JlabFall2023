@@ -8,7 +8,8 @@
 
 </head>
 <body>
-<div class="row justify-content-center">
+  <div class="container-fluid">
+  <div class="row justify-content-center">
   <!-- header -->
   <div class="col center">
     <h1>Doors Are Terribly Designed</h1>
@@ -16,63 +17,76 @@
     <p>Even though doors are a part of everyone's lives, they are out to ruin your life. One thing I have noticed is that when I walk up to a new door with nothing on it, I always am second-guessing myself as to what action I should take: push or pull.</p>
   </div>
 </div>
+</div>
 
 <!-- main content stuff  -->
-<div class="row">
-  <!-- tabs with stuff in it -->
-  <div class="tab">
-    <button class="tablinks BD" onclick="openDesign(event, 'BD')">Bad Design</button>
-    <button class="tablinks GD" onclick="openDesign(event, 'GD')">Good Design</button>
-  </div>
+<div class="container-fluid">
+  <div class="row">
+    <!-- tabs with stuff in it -->
+    <div class="tab">
+      <button class="tablinks BD btn" onclick="openDesign(event, 'BD')">Bad Design</button>
+      <button class="tablinks GD btn" onclick="openDesign(event, 'GD')">Good Design</button>
+    </div>
 
-  <!-- bad design stuff -->
-  <div id="BD" class="tabcontent center">
-    <div class="row justify-content-center">
-      <div class="col-md-5 border border-primary" id="imgcol">
-        <img id="bddoor" src="img/bdClose.jpg" alt="closed door">
-      </div>
-      <div class="col-sm-2"></div>
-      <div class="col-md-5 border border-primary">
-        <h4>What Will You Do?</h4>
-        <button type="button" class="btn" id="bdPush">push</button>
-        <br> <!-- style the buttons -->
-        <button type="button" class="btn" id="pull">pull</button>
-        <br>
-        <p id="bdAnswer"></p>
+    <!-- bad design stuff -->
+    <div id="BD" class="tabcontent center">
+      <div class="row justify-content-center">
+        <!-- col. with image  -->
+        <div class="col-md-5" id="imgcol">
+          <img id="bddoor" src="img/bdClose.jpg" alt="closed door">
+        </div>
+        <div class="col-sm-2"></div>
+        <!-- col. with the buttons  -->
+        <div class="col-md-5">
+          <h4>What Will You Do?</h4>
+          <button type="button" id="bdPush">push</button>
+          <br>
+          <br>
+          <button type="button" id="bdPull">pull</button>
+          <br>
+          <p id="bdAnswer"></p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- good design stuff  -->
-  <div id="GD" class="tabcontent center">
-    <div class="row justify-content-center">
-      <div class="col-md-5 border border-primary" id="imgcol">
-        <!-- the col with the img  -->
-      </div>
-      <div class="col-sm-2"></div>
-      <div class="col-md-5 border border-primary">
-        <h4>What Will You Do?</h4>
-        <button class="btn">push</button>
-        <br> <!-- style the buttons -->
-        <button class="btn">pull</button>
+    <!-- good design stuff  -->
+    <div id="GD" class="tabcontent center">
+      <div class="row justify-content-center">
+        <!-- col. with image -->
+        <div class="col-md-5" id="imgcol">
+          <img id="gddoor" src="img/gdClose.jpg" alt="closed door">
+        </div>
+        <div class="col-sm-2"></div>
+        <!-- col. with buttons -->
+        <div class="col-md-5">
+          <h4>What Will You Do?</h4>
+          <button type="button" id="gdPush">push</button>
+          <br>
+          <br>
+          <button type="button" id="gdPull">pull</button>
+          <br>
+          <p id="gdAnswer"></p>
+        </div>
       </div>
     </div>
-  </div>
 
+  </div>
 </div>
 
 <!-- footer  -->
-<div class="row justify-content-center">
-<div class="col-md-2 ccenter  border border-secondary">
-  <p>This website was brought to you by what I learned in my Human Computer interactions class</p>
-</div>
-<div class="col-md-4"></div>
-<div class="col-md-2 center border border-danger">
-  <a href="" target="_blank">code</a>
-  <br>
-  <br>
-  <a href="" target="_blank">validator</a>
-</div>
+<div class="container-fluid footer">
+  <div class="row justify-content-center">
+    <div class="col-md-2 center">
+      <p>This website was brought to you by what I learned in my Human Computer interactions class</p>
+    </div>
+  <div class="col-md-4"></div>
+  <div class="col-md-2 center">
+    <a href="https://github.com/raidengreene/JlabFall2023" target="_blank">code</a>
+    <br>
+    <br>
+    <a href="" target="_blank">validator</a>
+  </div>
+  </div>
 </div>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
